@@ -1,0 +1,29 @@
+[package]
+name = "boost_ptr_container"
+description = "Boost C++ library boost_ptr_container packaged using Zanbil"
+version = "0.1.0"
+edition = "2024"
+links = "boost_ptr_container"
+license = "BSL-1.0"
+repository = "https://github.com/zanbilify/boost_ptr_container"
+
+[package.metadata.zanbil]
+make_dependencies_public = true
+
+[dependencies]
+boost_array = { version = "0.1.0", path = "../boost_array" }
+boost_assert = { version = "0.1.0", path = "../boost_assert" }
+boost_circular_buffer = { version = "0.1.0", path = "../boost_circular_buffer" }
+boost_config = { version = "0.1.0", path = "../boost_config" }
+boost_core = { version = "0.1.0", path = "../boost_core" }
+boost_iterator = { version = "0.1.0", path = "../boost_iterator" }
+boost_mpl = { version = "0.1.0", path = "../boost_mpl" }
+boost_range = { version = "0.1.0", path = "../boost_range" }
+boost_smart_ptr = { version = "0.1.0", path = "../boost_smart_ptr" }
+boost_static_assert = { version = "0.1.0", path = "../boost_static_assert" }
+boost_type_traits = { version = "0.1.0", path = "../boost_type_traits" }
+boost_unordered = { version = "0.1.0", path = "../boost_unordered" }
+boost_utility = { version = "0.1.0", path = "../boost_utility" }
+
+[build-dependencies]
+zanbil-boost-build = "0.1.0"
